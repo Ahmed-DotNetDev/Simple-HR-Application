@@ -1,0 +1,68 @@
+﻿@model Employee
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!---------------------Styling the error validations------------------>
+    <style>
+        .input-validation-error{
+            background-color :red;
+        }
+        .validation-summary-errors{
+            color:darkred;
+            font-weight:bold;
+        }
+    </style>
+</head>
+
+<body>
+    <form asp-action="Employee" method="post">
+        <h1>Employee Form</h1>
+        <!--Validation for all components-->
+        <div asp-validation-summary="All"></div>
+        <!---------------------employeeName label text------------------->
+        <div class="form-group">
+            <label asp-for="employeeName">Employee Name</label>
+            <input asp-for="employeeName" class="form-control form-control-sm" placeholder="Enter username">
+        </div>
+        <!-------------------------department label selection--------------------->
+        <div class="form-group">
+            <label asp-for="department">Employee Department</label>
+            <select asp-for="department" class="form-group">
+               <option></option>
+               <option value="CS">CS</option>
+               <option value="IS">IS</option>
+               <option value="AI">AI</option>
+               <option value="SE">SE</option>
+           </select>
+        </div>
+        <!------------------------------- label checkbox-------------------------->
+        <div class="form-check form-check-inline">
+            <label asp-for="isActive" class="form-check-label form-check-label">Employee isActive</label>
+            <input type="checkbox" asp-for="isActive" class="form-check-input">
+        </div>
+        <!---------------------------------- label Email------------------------->
+        <div class="form-group"> 
+            <label asp-for="email">Email</label>
+            <input type="email" asp-for="email" class="form-control form-control-sm" placeholder="Enter your email">
+        </div>
+        <!----------------------------- label Job-title------------------------->
+        <div class="form-group">
+            <label asp-for="jopTitle">Job title</label>
+            <input type="text" asp-for="jopTitle" class="form-control form-control-sm" placeholder="Enter your job title">
+        </div>
+        <!------------------------------- label Date----------------------->
+        <div class="form-group">
+            <label asp-for="DateTime">Date</label>
+            <input type="date" asp-for="DateTime" class="form-control">
+        </div>
+        <!----------------------------- save button------------------------>
+        <button type="submit" class="btn btn-success">Save</button>
+    </form>
+</body>
+
+</html>

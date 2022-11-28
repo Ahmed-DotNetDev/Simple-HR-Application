@@ -1,0 +1,52 @@
+﻿@model IEnumerable<Employee>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<style>
+		table.table-hover tbody tr:hover{
+			background-color: #C7F3E7;
+		}
+
+		table.table-hover tbody tr td:hover {
+			background-color: #F37F4D;
+		}
+	</style>
+</head>
+
+
+<body>
+	
+	<table class="table table-bordered table-striped table-hover">
+		
+		<thead>
+			<tr>
+				<th>Emp-Name</th>
+				<th>Emp-Department</th>
+				<th>Emp-Jobtitle</th>
+				<th>Emp-Email</th>
+				<th>Emp-Date</th>
+			</tr>
+		</thead>
+		<tbody>
+			@foreach (Employee ptr in Model)
+			{
+
+
+				<tr>
+					<td> @ptr.employeeName</td>
+					<td> @ptr.department</td>
+					<td> @ptr.jopTitle</td>
+					<td> @ptr.email</td>
+					<td> @ptr.DateTime</td>
+				</tr>
+			}
+		</tbody>
+	</table>
+</body>
+
+</html>
