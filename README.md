@@ -1,7 +1,20 @@
 # Simple-HR-Application
-Simple application management using MVC 
-you can create and delete and update data 
+  Simple application management using MVC 
+  You can create and display data 
 
+<h2>Technologies</h2>
+  HTML , CSS , Bootstrap , C# , MVC , Razor syntax
+
+<h2>Features</h2>
+  You can add a form that a data about employees and you can display them in a table
+  
+<h2>Setup</h2>
+  You can download this project and run it via visual studio or VS code and it will display a home page and 
+  you can add and display it 
+  
+  
+<h2>Project photos</h2>
+  
 <h3>Home page</h3>
 
 ![HOMEPAGE](https://user-images.githubusercontent.com/118932313/208301457-69a3dd67-17a5-44c8-a30d-a2b41c192759.PNG)
