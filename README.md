@@ -15,7 +15,8 @@
   
 <h2>Project photos</h2>
   
-<h3>Home page</h3>
+  
+<h4>Home page</h4>
 
 ![HOMEPAGE](https://user-images.githubusercontent.com/118932313/208301457-69a3dd67-17a5-44c8-a30d-a2b41c192759.PNG)
 
